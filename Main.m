@@ -45,6 +45,9 @@ d=2;
 %% Input Testing
 % Call function input_test
 proceed=input_test(D,S,C,e,d);
+if strcmp(proceed,'no')
+    pause 
+end
 
 %% Matrix Formation for system Ax=b
 % Call function matrix_function
@@ -65,7 +68,6 @@ solution2 = Jacobi(A,B,x);
 toc
 
 %% Solution matrix formation and plotting
-figure;
 mesh=solution_plotting(solution1);
 [x,y]=meshgrid(0:d:d*(n-1),0:e:e*(n-1));
 surf(x,y,mesh)
@@ -92,4 +94,4 @@ time=cputime-tStart
 dbstack('-completenames')
 author='This solver is created by Yun-Hsuan Lee.';
 disp(author)
-%publish('main.m','pdf')
+%publish('Main.m','pdf')
