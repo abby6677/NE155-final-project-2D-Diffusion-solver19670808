@@ -36,5 +36,5 @@ function solution = Gauss_Seidel(A,B,x)
     solution=x;
     
     %display
-    numitr=['The number of iterations is:',num2str(itr)];
+    numitr=['The number of iterations for GS is:',num2str(itr)];
     disp(numitr)

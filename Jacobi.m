@@ -36,7 +36,7 @@ function solution = Jacobi(A,B,x)
     solution=x;
     
     %display
-    numitr=['The number of iterations is:',num2str(itr)];
+    numitr=['The number of iterations for Jacobi is:',num2str(itr)];
     disp(numitr)
     
     
